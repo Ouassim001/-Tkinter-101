@@ -18,6 +18,9 @@ def change4():
     window.config(bg="#590600")
     window.geometry("450x450")
 
+def boom():
+    window.destroy()
+
 window = Tk.Tk()
 window.title("bomb")
 window.geometry("250x250")
@@ -26,6 +29,7 @@ window.after(1000, change1)
 window.after(2000, change2)
 window.after(3000, change3)
 window.after(4000, change4)
+window.after(5000, boom)
 
 
 
